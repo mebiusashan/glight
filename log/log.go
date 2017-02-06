@@ -39,6 +39,21 @@ const (
 // LOG_LEVEL = 6 打印 warn警告 和 error错误
 //
 // LOG_LEVEL = 7 全部打印
+//
+// example:
+//
+//	package main
+//
+//	import "github.com/mebiusashan/glight/log"
+//	
+//	func main(){
+//		log.LOG_LEVEL=7
+//		log.E("error")
+//		log.W("warn")
+//		log.L("log")
+//	}
+//
+// 设置对应的日志级别后，可正常打印信息
 var LOG_LEVEL = 0
 
 // 调试打印开启选项，开发阶段可设置为true
